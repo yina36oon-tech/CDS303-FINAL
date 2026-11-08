@@ -16,6 +16,24 @@ Clustering falls under unsupervised learning meaning there are no set answers to
 
 Classification helps explain clusters by turning cluster labels into a target variable and using the original variables as predictors. Then a supervised model is used to learn which variables determine cluster membership and SHAP values show which variables matter most across all clusters and within each one. It also helps to identify whether high or low values push an observation toward a particular cluster. In the paper’s case study, this helped in turning arbitrary labels into named groups such as “Disadvantaged students” by revealing most important variables for each cluster.
 
+## Description of current data and source
+
+Current Dataset: Washington DC Crime Incidents in 2025 
+
+Source: DC Open Data, ‘Crime Incidents in 2025’, published by the Metropolitan Police Department of Washington, DC.
+
+The dataset contains 24,156 records of reported crime incidents in Washington, DC. The reports span the time frame from January 1, 2025 to January 1, 2026. There are 25 different variables that describe each incident. The key variables included and focused in our project are as follows:
+
+- The Latitude and Longitude which help to pinpoint the location the incident occurred 
+
+- Report Date refers to when the incident was reported 
+
+- Block gives the block-level street address showing location roughly different from previous location variables
+
+- Offense variable describes what kind of crime took place and Method variable indicates how the crime was committed
+
+Other variables include Start Date, End Date of the incident, Block X and Block Y coordinates explain location further while Ward, District, and Police Service Area help to describe the administrative and police jurisdictions under which the incident occurred. Voting Precinct provides further geographic data on the incident and Census tract are statistical subdivisions that can be used to link crimes to census and demographic data 
+
 ## Variable Selection Table
 
 | Variable | Description and unit | Data type | Proposed role | Rationale / preparation needed |
