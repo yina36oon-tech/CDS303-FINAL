@@ -16,7 +16,7 @@ Clustering falls under unsupervised learning meaning there are no set answers to
 
 Classification helps explain clusters by turning cluster labels into a target variable and using the original variables as predictors. Then a supervised model is used to learn which variables determine cluster membership and SHAP values show which variables matter most across all clusters and within each one. It also helps to identify whether high or low values push an observation toward a particular cluster. In the paper’s case study, this helped in turning arbitrary labels into named groups such as “Disadvantaged students” by revealing most important variables for each cluster.
 
-## Description of current data and source
+## Description of current data and source 
 
 Current Dataset: Washington DC Crime Incidents in 2025 
 
@@ -75,7 +75,7 @@ Provider: Open Data DC
 Source link: https://opendata.dc.gov/datasets/a53c0f02804a484b87027ce3ef3ff38b_41/about
 
 Relevant variables from this dataset are: 
-DP03_0001E (employment status of population of people aged 16 years and older), DP03_00863 (mean family income), and DP03_0133PE (percentage of people aged 18 years and older whose income is below the poverty level)
+DP03_0001E (employment status of population of people aged 16 years and older), DP03_00863 (mean household income), and DP03_0133PE (percentage of people aged 18 years and older whose income is below the poverty level)
 
 
 
