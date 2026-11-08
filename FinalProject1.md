@@ -16,7 +16,7 @@ Clustering falls under unsupervised learning meaning there are no set answers to
 
 Classification helps explain clusters by turning cluster labels into a target variable and using the original variables as predictors. Then a supervised model is used to learn which variables determine cluster membership and SHAP values show which variables matter most across all clusters and within each one. It also helps to identify whether high or low values push an observation toward a particular cluster. In the paper’s case study, this helped in turning arbitrary labels into named groups such as “Disadvantaged students” by revealing most important variables for each cluster.
 
-### A Variable Selection Table
+## Variable Selection Table
 
 | Variable | Description and unit | Data type | Proposed role | Rationale / preparation needed |
 |---|---|---|---|---|
@@ -26,8 +26,21 @@ Classification helps explain clusters by turning cluster labels into a target va
 | OFFENSE | 9 types of crime | Categorical | Classification input | Explains what kind of crime each cluster contains. Needs to group rarer/more severe cases|
 | METHOD | How the offense was committed (weapon, etc.) | Categorical | Classification input | Adds more detail to explain clusters|
 | X, Y, XBLOCK, YBLOCK | Map coordinates | Numerical | Exclude | Redundant with LATITUTE and LONGITUDE|
-| CCN, OBJECTID, OCTO_RECORD_ID | Record identifiers | ID | Exclude | Not meaningful for analysis |
-       
+| OBJECTID, OCTO_RECORD_ID | Record identifiers | ID | Exclude | Not meaningful for analysis |
+| START_DATE, END_DATE |  Date and time of starting and ending of crime | Object as datetime | Exclude | Not meaningful for analysis, redundant with REPORT_DAT |
+
+### How the clustering variables relate to the research question
+
+The clustering inputs are 'LATITUDE', 'LONGITUDE', and 'REPORT_DAT'. Latitude and Longitude provides the location of each crime committed and report date implies what time and day of the week the incident occurred. Groups of location can be clustered into regions closer in coordinates like northwest, and southeast regions, and groups of time can be clustered into times closer in hours like early-mornings, afternoons, and late-nights.
+
+### Candidate predictors for classification
+
+To predict each incident's group of cluster, a classifier will be trained. 'OFFENSE', and 'METHOD' will be used to predict crime type and method to present the traits of crimes rather than just the presence of incidents.
+
+### Variables that are likely to be excluded
+
+ID values such as OBJECTID and OCTO_RECORD_ID provide no meaningful values to analyzing crime patterns, and therefore, will be excluded. 'X', 'Y', 'XBLOCK' and 'YBLOCK' are variables that display map coordinates which are already provided by 'LATITUDE' and 'LONGITUDE'. Due to their redundancy, they are also most likely to be excluded.
+
 
 
 
