@@ -9,5 +9,5 @@ This project examines patterns of crime reported in Washington DC across locatio
 
 How do spatial and temporal patterns of crime in Washington DC relate to the economic characteristics of the regions where the incidents occur? 
 
-
+### Sessions and Progresses
 [Session1](Session1.md)
