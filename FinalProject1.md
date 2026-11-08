@@ -1,8 +1,5 @@
-# Final Project for CDS303 Fall2026
-## Anza Amatya and Yina Yoon
-
-
-Paper Summary
+# Section 1
+## Paper Summary
 ### Understanding purpose of each step in the four step framework
 
 The paper proposes a comprehensive four step framework for explainable cluster analysis to be done on high-dimensional mixed data to address limitations of data quality, explainability, large and mixed datasets. The four steps are: data preprocessing, dimensionality reduction, clustering, and classification.
