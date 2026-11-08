@@ -79,9 +79,12 @@ DP03_0001E (employment status of population of people aged 16 years and older), 
 
 The dataset chosen contains American Community Survey (ACS) 5 year estimates of economic characteristics such as income, occupation, and health insurance for each census tract in DC using 2020 Census Tract boundaries. 
 The relevant variables to be used from this dataset include:
-Employment Status for population from 16 years and older (DP03_0001E)
-Mean Household Income to describe income level for each tract (DP03_00863)
-Poverty Level: percentage of people 18 years and older with income level less than the poverty level
+
+- Employment Status for population from 16 years and older (DP03_0001E)
+
+- Mean Household Income to describe income level for each tract (DP03_00863)
+
+- Poverty Level: percentage of people 18 years and older with income level less than the poverty level
 Census tract code to be used to link dataset with crime incidents dataset (DP03_0133PE)
 
 Contribution to current dataset
