@@ -39,7 +39,14 @@ To predict each incident's group of cluster, a classifier will be trained. 'OFFE
 
 ### Variables that are likely to be excluded
 
-ID values such as OBJECTID and OCTO_RECORD_ID provide no meaningful values to analyzing crime patterns, and therefore, will be excluded. 'X', 'Y', 'XBLOCK' and 'YBLOCK' are variables that display map coordinates which are already provided by 'LATITUDE' and 'LONGITUDE'. Due to their redundancy, they are also most likely to be excluded.
+ID variables such as OBJECTID and OCTO_RECORD_ID provide no meaningful values to analyzing crime patterns, and therefore, will be excluded. 'X', 'Y', 'XBLOCK' and 'YBLOCK' are variables that display map coordinates which are already provided by 'LATITUDE' and 'LONGITUDE'. Due to their redundancy, they are also most likely to be excluded.
+
+### Potential preparation needs
+
+All variables for clustering and classification have no missing values. The variables with missing values are: 
+Index(['END_DATE', 'DISTRICT', 'PSA', 'BLOCK_GROUP', 'CENSUS_TRACT', 'BID',
+       'OCTO_RECORD_ID'],
+      dtype='object'). Since these variables are not going to be used for either clustering or classification, there will be no need to impute for empty the values. 'REPORT_DAT' is stored as text in UTC timezone. It needs adjustment so that UTC datetime is converted to New York timezone before pulling hour and day of week. After deriving hour and day of week, cosine similarity can be helpful to scale and represent time blocks due to 'REPORT_DAT''s cyclical nature. 'LATITUDE' and 'LONGITUDE' need standardization to prevent single variable domination (a huge number of calculated distance overpowering the entire data).
 
 
 
