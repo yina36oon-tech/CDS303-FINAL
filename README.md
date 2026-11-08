@@ -1,4 +1,4 @@
-#Final Project for CDS303 Fall2026
+# Final Project for CDS303 Fall2026
 Anza and Yina
 
 Paper Summary
@@ -18,6 +18,22 @@ Clustering falls under unsupervised learning meaning there are no set answers to
 How classification helps explain clusters
 
 Classification helps explain clusters by turning cluster labels into a target variable and using the original variables as predictors. Then a supervised model is used to learn which variables determine cluster membership and SHAP values show which variables matter most across all clusters and within each one. It also helps to identify whether high or low values push an observation toward a particular cluster. In the paper’s case study, this helped in turning arbitrary labels into named groups such as “Disadvantaged students” by revealing most important variables for each cluster.
+
+| Variable | Description and unit | Data type | Proposed role | Rationale / preparation needed |
+|---|---|---|---|---|
+| LATITUDE | North-south location of the incident | Numerical | Clustering input | Indicates location of crime. Needs standardization before clustering. |
+| LONGITUDE | East-west location of the incident | Numerical | Clustering input | Indicates location of crime. Needs standardization before clustering. |
+| REPORT_DAT | Date and time the crime was reported (UTC timezone) | Object as datetime | Clustering input | Indicates time and date of crime. Need to convert from UTC to New_York timezone, then get hour and day of week from the entire attribute. |
+| OFFENSE | 9 types of crime | Categorical | Classification input | Explains what kind of crime each cluster contains. Needs to group rarer/more severe cases|
+| METHOD | How the offense was committed (weapon, etc.) | Categorical | Classification input | Adds more detail to explain clusters|
+| X, Y, XBLOCK, YBLOCK | Map coordinates | Numerical | Exclude | Redundant with LATITUTE and LONGITUDE|
+| CCN, OBJECTID, OCTO_RECORD_ID | Record identifiers | ID | Exclude | Not meaningful for analysis |
+       
+
+
+
+
+
 
 
 
