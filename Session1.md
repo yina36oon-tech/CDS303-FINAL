@@ -87,10 +87,6 @@ The relevant variables to be used from this dataset include:
 - Poverty Level: percentage of people 18 years and older with income level less than the poverty level
 Census tract code to be used to link dataset with crime incidents dataset (DP03_0133PE)
 
-Contribution to current dataset
+Contribution and Connection to current dataset
 
-The crime incident data provides information about when and where the crimes occurred but it doesn’t provide information about the people living in the areas where the incident happened which is key to our research question. This additional dataset adds socioeconomic context for the census tracts in DC. After clustering the crime incidents data using the location related variables we can compare the results with the economic characteristics found in the ACS dataset to interpret whether areas with similar crime patterns also share similarities in income, employment or poverty level in order to associate socioeconomic traits to each cluster. 
-
-
-
-
+The crime incident data provides information about when and where the crimes occurred but it doesn’t provide information about the people living in the areas where the incident happened which is key to our research question. This additional dataset adds socioeconomic context for the census tracts in DC. After clustering the crime incidents data using the location related variables we can compare the results with the economic characteristics found in the ACS dataset to interpret whether areas with similar crime patterns also share similarities in income, employment or poverty level in order to associate socioeconomic traits to each cluster. Both datasets include the census tract, which serves as the shared identifier. The census tract which is a six-digit variable can be used to match data from the two sets. 
