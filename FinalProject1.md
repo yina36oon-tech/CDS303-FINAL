@@ -66,8 +66,11 @@ Index(['END_DATE', 'DISTRICT', 'PSA', 'BLOCK_GROUP', 'CENSUS_TRACT', 'BID',
        'OCTO_RECORD_ID'],
       dtype='object'). Since these variables are not going to be used for either clustering or classification, there will be no need to impute for empty the values. 'REPORT_DAT' is stored as text in UTC timezone. It needs adjustment so that UTC datetime is converted to New York timezone before pulling hour and day of week. After deriving hour and day of week, cosine similarity can be helpful to scale and represent time blocks due to 'REPORT_DAT''s cyclical nature. 'LATITUDE' and 'LONGITUDE' need standardization to prevent single variable domination (a huge number of calculated distance overpowering the entire data).
 
-
-
+## A supplementary dataset
+Dataset title: ACS 5-Year Economic Characteristics DC Census Tract
+Provider: Open Data DC
+Source link: https://opendata.dc.gov/datasets/a53c0f02804a484b87027ce3ef3ff38b_41/about
+Relevant variables from this dataset are: DP03_0001E (employment status of population of people aged 16 years and older), DP03_00863 (mean family income), and DP03_0133PE (percentage of people aged 18 years and older whose income is below the poverty level)
 
 
 
