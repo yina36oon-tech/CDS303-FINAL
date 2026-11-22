@@ -12,6 +12,6 @@ How do spatial and temporal patterns of crime in Washington DC relate to the eco
 ### Sessions
 [Session1](Session1.md)
 
-[Session2](FinalProject2.ipyb)
+[Session2](FinalProject2.ipynb)
 
 [Session2 Report](ProjectReport.md)
