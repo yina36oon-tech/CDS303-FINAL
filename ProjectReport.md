@@ -76,3 +76,7 @@ Biplot of PC1 (46.8%) and PC2 (33.2%).
 - `violent_n` points to the left, opposite `mean_income`, so tracts with higher income tend to have fewer violent incidents. `violent_n` and `povertylvl` point the same way, so violent crimes tend to be higher where poverty is higher but since the arrows are fairly far apart, the link is only moderate.
 - `property_n` points mostly upward and is far from `mean_income`, suggesting that property crime is independent of tract income.
 - `violent_n` and `property_n` are fairly close, so tracts with more violent incidents also tend to have more property incidents.
+
+### Relation to the research question and audience
+
+The main spatial pattern in crime across DC tracts has two dimensions. One links economic conditions to violent crime (PC1), and the second one is property crime, which is largely independent of income and poverty (PC2). For the agencies that run workforce and violence-prevention programs, this suggests that low-income, high-poverty tracts tend to coincide with more violent crime, so economic and violence-prevention programs could be considered together there. For the Police Department, small businesses, and nonprofits, it suggests that violent and property crime should be looked at separately, since they follow different patterns across tracts. However, one thing to consider is that these are associations between tracts, not causes.
